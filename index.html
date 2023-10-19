@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4dab806e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#porfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Rishabh</span><br> Chandila </h1>
+        </div>
+    </div>
+</div> 
+<!-------------ABOUT------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> Myself Rishabh Chandila with age 20 yrs old.
+                    Currently I am pursuing BCA in Amity University Noida.
+                    I don't like coding by the way but I am very intrested,
+                    in Blockchain by the day and AI and ML in night. I think
+                    finding passion is useless just doing what I love. 
+                    I have some core skills like: Web Development, UI/UX Design etc.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick= "opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/Apps Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Blockchain Basics</span><br>Build smart contracts on etherium chain</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021-Current</span><br>Freelancing UI/UX Design</li>
+                            <li><span>2020 - 2021</span><br>Internship in Eclipse</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital LTD.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021-2024</span><br>Pursuing BCA form Amity University, Noida</li>
+                            <li><span>2021</span><br>Pass 12th with PCM from CBSE</li>
+                            <li><span>2019</span><br>UI/UX Design Training at Et Institute</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------services---------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I can make your website Design responsive and can implement motion animations</p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>UI/UX design</h2>
+            <p>I can make your website Design responsive and can implement motion animations</p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>I can make your App Design responsive and can implement motion animations</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+    </div>
+</div>
+<!-----------portfolio--------------->
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+               <img src="images/work-1.png"> 
+               <div class="layer">
+                <h3>Social Media App</h3>
+                  <p>The app connects you to the talented people around the world.
+                    Download it from App store. </p>
+                    <a href="https://apps.apple.com/in/app/instagram/id389801252"><i class="fa-solid fa-up-right-from-square"></i></a>
+               </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                 <h3>Music App</h3>
+                   <p>The app connects you to the talented people around the world.
+                     Download it from App store. </p>
+                     <a href="https://apps.apple.com/in/app/spotify-music-and-podcasts/id324684580"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+
+             <div class="work">
+                <img src="images/work-3.png"> 
+                <div class="layer">
+                 <h3>Online Shopping App</h3>
+                   <p>The app connects you to the talented people around the world.
+                     Download it from App store. </p>
+                     <a href="https://apps.apple.com/in/app/amazon-india-shop-pay-minitv/id1478350915"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+             </div>
+        </div>
+        <a href="#" class="btn"> See More</a>
+    </div>
+</div>
+<!-------------Contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="Contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rishabhchandila1111@gmai.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://github.com/  target="_blank><i class="fa-brands fa-square-github"></i></a>
+                    <a href=" https://twitter.com/rishabh7375/status/1423511456654393348?s=46&t=xZ8N6J179kaZ7r_0USe4zA"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/rishabh.10x?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/rishabh-chandila-865969210?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv1.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="Contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy 2023 Rishabh Chandila. All rights reserved</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+        sidemenu.style.right = "0";
+     }
+     function closemenu(){
+        sidemenu.style.right = "-200px";
+     }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySqReiFLB4u7d6wxB3Wr3J4SfS41UlhxD_IFLcCeP00P_29vhjCN2FFYptvbLUJj0QmQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML  = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
